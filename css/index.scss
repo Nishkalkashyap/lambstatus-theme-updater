@@ -64,7 +64,8 @@ main::after {
     // font-size: 100px;
    
     top: 120px;
-    left: calc(170px);
+    // left: 170px;
+    left: calc(50% - 130px);
     font-size: 100px;
 }
 
