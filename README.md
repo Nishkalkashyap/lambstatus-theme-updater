@@ -34,4 +34,4 @@ Use this project to update the stylesheet (css) of your status pages. Here's a d
 10. Finally, to upload your styles, run `npm run upload`
 11. Dance!!! 💃 Your page styles have been updated.
 
-![](https://media.giphy.com/media/QdjjW71YLrzWg/giphy.gif)
+![](https://media.giphy.com/media/LLHkw7UnvY3Kw/giphy.gif)
