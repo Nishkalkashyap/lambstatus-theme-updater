@@ -8,7 +8,7 @@ Use this project to update the stylesheet (css) of your status pages. Here's a d
 <!-- ![Default styles](./readme/default.png) -->
 #### Before:
 <img src="./readme/default.png" width="400">
-<!-- ![With updated styles](./readme/updated.png) -->
+
 #### After:
 <img src="./readme/updated.png" width="400">
 
