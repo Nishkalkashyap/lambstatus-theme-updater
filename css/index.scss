@@ -1,0 +1,99 @@
+$primaryColor : #488aff;
+$darkColor : #333333;
+$lightColor : #8794a0;
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif !important;
+    color: $darkColor;
+}
+
+div[class^='StatusPageLayout__background___'] {
+    background-color: #ffffff !important;
+}
+
+li[class*='MetricsGraph__container___'],
+li[class*='Components__item___'],
+li[class*='IncidentItem__item___'] {
+    margin-top: -1px;
+    box-shadow: none;
+    border: solid 1px #CCE1FF;
+    border-radius: 2px;
+}
+
+div[class^='Components__container___'] {
+    li[class*='Components__item___'] {
+
+        span[class^='Components__item-secondary___'] {
+            color: $primaryColor !important;
+            font-weight: 500;
+        }
+
+        span[class^='Components__item-primary___']:first-child {
+            color: $darkColor !important;
+            font-weight: 500;
+        }
+
+        span[class^='Components__item-subtitle___'] {
+            color: $lightColor !important;
+            font-weight: 300;
+            margin: 10px 0px 5px 0px;
+        }
+    }
+
+}
+
+div[class^='Metrics__container___'] {
+
+    div[class^='MetricsGraph__title___'] {
+        color: $darkColor !important;
+        font-weight: 500;
+    }
+
+    div[class^='MetricsGraph__loading___'] {
+        color: $lightColor !important;
+        font-weight: 300;
+    }
+}
+
+a[class^='IncidentItem__item-primary-link___'] {
+    color: $primaryColor !important;
+    font-weight: 500;
+}
+
+h4[class^='Incidents__title___'] {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+div[class^='Incidents__border___'] {
+    border-color: #CCE1FF !important;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+span[class^='Incidents__no-incidents___'] {
+    border-color: $lightColor !important;
+    font-size: 16px;
+}
+
+i[class^='SubscriptionMenu__mail-icon___']::before {
+    content: 'Subscribe to updates';
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    background-color: #0068ff;
+    color: #ffffff;
+    padding: 10px 15px 9px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.material-icons {
+    font-size: 0px !important;
+    color: $primaryColor;
+}
