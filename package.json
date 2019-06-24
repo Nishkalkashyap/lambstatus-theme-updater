@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon -w ./css/index.scss ./src/server.js",
     "compile": "tsc ./src/server.ts",
     "prepare": "ts-node ./src/prepare.ts",
-    "watch": "nodemon -w ./css/index.scss ./src/server.js",
     "download": "ts-node ./src/download-files.ts"
   },
   "keywords": [],
