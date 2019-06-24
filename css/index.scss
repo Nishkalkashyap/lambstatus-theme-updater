@@ -2,7 +2,7 @@ $primaryColor : #488aff;
 $darkColor : #333333;
 $lightColor : #8794a0;
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
 
 body {
     font-family: 'Rubik', sans-serif !important;
@@ -96,4 +96,17 @@ i[class^='SubscriptionMenu__mail-icon___']::before {
 .material-icons {
     font-size: 0px !important;
     color: $primaryColor;
+}
+
+span[class^='SubscriptionMenu__button___'] {
+    font-family: 'Rubik', sans-serif !important;
+    background-color: #0068ff;
+    color: #ffffff;
+    margin: 0px 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
+}
+
+div[class^='SubscriptionMenu__dropdown___']:first-child {
+    color: $lightColor;
 }
