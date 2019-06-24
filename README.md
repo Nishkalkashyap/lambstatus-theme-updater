@@ -5,7 +5,10 @@ Lambstatus is great for creating status pages, but there's one possible area whe
 
 Use this project to update the stylesheet (css) of your status pages. Here's a demo below.
 
+#### Before:
 ![Default styles](./readme/default.png)
+________
+#### After:
 ![With updated styles](./readme/updated.png)
 
 
