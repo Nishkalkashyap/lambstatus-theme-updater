@@ -5,12 +5,12 @@ Lambstatus is great for creating status pages, but there's one possible area whe
 
 Use this project to update the stylesheet (css) of your status pages. Here's a demo below.
 
-![](./readme/default.png)
-![](./readme/updated.png)
+![Default styles](./readme/default.png)
+![With updated styles](./readme/updated.png)
 
 
 
-To update , follow the steps below:
+#### To update , follow the steps below:
 
 1. `git clone https://github.com/Nishkalkashyap/lambstatus-theme-updater`
 2. run `npm install`
