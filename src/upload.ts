@@ -12,17 +12,20 @@ const promises = [
     s3.upload({
         Bucket: process.env.bucket,
         Body: baseRefHtml,
-        Key: 'index-base.html'
+        Key: 'index-base.html',
+        ContentType: 'text/html'
     }).promise(),
     s3.upload({
         Bucket: process.env.bucket,
         Body: fs.readFileSync('./aws-content/index.html').toString(),
-        Key: 'index.html'
+        Key: 'index.html',
+        ContentType: 'text/html'
     }).promise(),
     s3.upload({
         Bucket: process.env.bucket,
         Body: fs.readFileSync('./aws-content/custom.css').toString(),
-        Key: 'custom.css'
+        Key: 'custom.css',
+        ContentType: 'text/css'
     }).promise(),
 ];
 

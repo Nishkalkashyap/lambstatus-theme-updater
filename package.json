@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "ts-node ./src/upload.ts",
     "watch": "nodemon -w ./css/index.scss ./src/server.js",
-    "compile": "tsc ./src/server.ts",
-    "prepare": "ts-node ./src/prepare.ts",
+    "prepare": "tsc ./src/server.ts && ts-node ./src/prepare.ts",
     "download": "ts-node ./src/download-files.ts"
   },
   "keywords": [],
