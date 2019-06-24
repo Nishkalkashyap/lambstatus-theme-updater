@@ -6,12 +6,9 @@ Lambstatus is great for creating status pages, but there's one possible area whe
 Use this project to update the stylesheet (css) of your status pages. Here's a demo below.
 
 <!-- ![Default styles](./readme/default.png) -->
-<div style="display:flex;">
-<!-- <div> -->
-<img src="./readme/default.png" style="display:inline-block;max-width:300px">
+<img src="./readme/default.png" style="display:inline-block;width:300px">
 <!-- ![With updated styles](./readme/updated.png) -->
-<img src="./readme/updated.png" style="display:inline-block;max-width:300px">
-</div>
+<img src="./readme/updated.png" style="display:inline-block;width:300px">
 
 
 
