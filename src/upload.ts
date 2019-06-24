@@ -27,6 +27,14 @@ const promises = [
         Key: 'custom.css',
         ContentType: 'text/css'
     }).promise(),
+    // ...fs.readdirSync('./assets').map((val) => {
+    //     return s3.upload({
+    //         Bucket: process.env.bucket,
+    //         Body: fs.readFileSync('./assets/' + val).toString(),
+    //         Key: val,
+    //         ContentType: 'image/png'
+    //     }).promise()
+    // })
 ];
 
 Promise.all(promises)

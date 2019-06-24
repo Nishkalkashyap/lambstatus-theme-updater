@@ -1,6 +1,8 @@
 $primaryColor : #488aff;
+$primaryDark : #0068ff;
 $darkColor : #333333;
 $lightColor : #8794a0;
+$lighterColor : #CCE1FF;
 $successColor : #05c47a;
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
@@ -14,15 +16,124 @@ div[class^='StatusPageLayout__background___'] {
     background-color: #ffffff !important;
 }
 
+// common
 li[class*='MetricsGraph__container___'],
 li[class*='Components__item___'],
 li[class*='IncidentItem__item___'] {
     margin-top: -1px;
     box-shadow: none;
-    border: solid 1px #CCE1FF;
+    border: solid 1px $lighterColor;
     border-radius: 2px;
 }
 
+// main
+main {
+    max-width: 850px !important;
+}
+
+main::before {
+    min-height: 200px;
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-color: $primaryDark;
+    // border-radius: 4px;
+    // background-image: url("./quark.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
+}
+
+main::after {
+    content: 'Quark';    
+    position: absolute;
+    text-align: center;
+    top: 140px;
+    left: calc(50% - 150px);
+    font-size: 100px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+// Header
+div[class*='Header__top___'] {
+    // min-height: 200px;
+    align-items: center;
+    display: flex;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    // border-radius: 4px;
+    // flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    h4 {
+        margin: 0px;
+
+        span {
+            color: #ffffff !important;
+            font-weight: 500 !important;
+        }
+
+        :first-child {
+            color: $successColor !important;
+        }
+    }
+}
+
+
+// Subscription
+i[class^='SubscriptionMenu__mail-icon___']::before {
+    content: 'Subscribe to updates';
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    background-color: $primaryDark;
+    color: #ffffff;
+    padding: 10px 15px 9px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+div[class^='Components__container___']::before {
+    content: 'All Systems Operational';
+    font-family: 'Rubik', sans-serif !important;
+    display: block;
+    position: relative;
+    font-size: 30px;
+    background-color: $successColor;
+    color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.material-icons {
+    font-size: 0px !important;
+    color: $primaryColor;
+}
+
+// subscription-button
+span[class^='SubscriptionMenu__button___'] {
+    font-family: 'Rubik', sans-serif !important;
+    background-color: $primaryDark;
+    color: #ffffff;
+    margin: 0px 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
+}
+
+div[class^='SubscriptionMenu__dropdown___']:first-child {
+    color: $lightColor;
+}
+
+// Components
 div[class^='Components__container___'] {
     li[class*='Components__item___'] {
 
@@ -45,6 +156,7 @@ div[class^='Components__container___'] {
 
 }
 
+// Metrics
 div[class^='Metrics__container___'] {
 
     div[class^='MetricsGraph__title___'] {
@@ -58,6 +170,7 @@ div[class^='Metrics__container___'] {
     }
 }
 
+// Incidents
 a[class^='IncidentItem__item-primary-link___'] {
     color: $primaryColor !important;
     font-weight: 500;
@@ -69,7 +182,7 @@ h4[class^='Incidents__title___'] {
 }
 
 div[class^='Incidents__border___'] {
-    border-color: #CCE1FF !important;
+    border-color: $lighterColor !important;
     font-weight: 500;
     font-size: 20px;
 }
@@ -77,52 +190,4 @@ div[class^='Incidents__border___'] {
 span[class^='Incidents__no-incidents___'] {
     border-color: $lightColor !important;
     font-size: 16px;
-}
-
-i[class^='SubscriptionMenu__mail-icon___']::before {
-    content: 'Subscribe to updates';
-    font-family: 'Rubik', sans-serif !important;
-    font-size: 20px;
-    position: relative;
-    top: -15px;
-    background-color: #0068ff;
-    color: #ffffff;
-    padding: 10px 15px 9px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-div[class^='Components__container___']::before {
-    content: 'All Systems Operational';
-    font-family: 'Rubik', sans-serif !important;
-    display: block;
-    position: relative;
-    font-size: 30px;
-    background-color: $successColor;
-    color: #ffffff;
-    padding: 20px 20px;
-    border-radius: 4px;
-    font-size: 20px;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    font-weight: 500;
-}
-
-.material-icons {
-    font-size: 0px !important;
-    color: $primaryColor;
-}
-
-span[class^='SubscriptionMenu__button___'] {
-    font-family: 'Rubik', sans-serif !important;
-    background-color: #0068ff;
-    color: #ffffff;
-    margin: 0px 10px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px 0px inset;
-}
-
-div[class^='SubscriptionMenu__dropdown___']:first-child {
-    color: $lightColor;
 }
