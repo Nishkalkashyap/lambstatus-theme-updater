@@ -17,10 +17,15 @@ $lightColor : #8da2b5;
 $lighterColor : #CCE1FF;
 $successColor : #00eb8b;
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+// @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+// $fontFamily : 'Rubik', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+$fontFamily : 'Audiowide', cursive;
 
 body {
-    font-family: 'Rubik', sans-serif !important;
+    font-family: $fontFamily !important;
     color: $darkColor;
 }
 
@@ -38,6 +43,13 @@ li[class*='IncidentItem__item___'] {
     border-radius: 2px;
 }
 
+h4[class^='Incidents__title___'],
+h4[class^='Metrics__title___'] {
+    font-weight: 500;
+    font-size: 28px;
+    font-family: $fontFamily;
+}
+
 // main
 main {
     max-width: 850px !important;
@@ -53,7 +65,7 @@ main::before {
 }
 
 main::after {
-    content: 'Quark';
+    content: 'Quark Status';
     position: absolute;
     text-align: center;
     font-weight: 500;
@@ -64,9 +76,8 @@ main::after {
     // font-size: 100px;
    
     top: 120px;
-    // left: 170px;
-    left: calc(50% - 130px);
-    font-size: 100px;
+    left: calc(50% - 330px);
+    font-size: 90px;
 }
 
 // Header
@@ -88,6 +99,7 @@ div[class*='Header__top___'] {
             color: #ffffff !important;
             font-weight: 500 !important;
             letter-spacing: 2px;
+            font-family: $fontFamily;
         }
     }
 }
@@ -96,7 +108,7 @@ div[class*='Header__top___'] {
 // Subscription
 i[class^='SubscriptionMenu__mail-icon___']::before {
     content: 'Subscribe  to  updates';
-    font-family: 'Rubik', sans-serif !important;
+    font-family: $fontFamily !important;
     font-size: 10px;
     font-weight: 500;
     position: relative;
@@ -113,7 +125,7 @@ i[class^='SubscriptionMenu__mail-icon___']::before {
 
 div[class^='Components__container___']::before {
     content: 'All Systems Operational';
-    font-family: 'Rubik', sans-serif !important;
+    font-family: $fontFamily !important;
     display: block;
     position: relative;
     font-size: 30px;
@@ -133,7 +145,7 @@ div[class^='Components__container___']::before {
 
 // subscription-button
 span[class^='SubscriptionMenu__button___'] {
-    font-family: 'Rubik', sans-serif !important;
+    font-family: $fontFamily !important;
     background-color: $primaryDark;
     color: #ffffff;
     margin: 0px 10px;
@@ -189,15 +201,11 @@ a[class^='IncidentItem__item-primary-link___'] {
     font-weight: 500;
 }
 
-h4[class^='Incidents__title___'] {
-    font-weight: 500;
-    font-size: 28px;
-}
-
 div[class^='Incidents__border___'] {
     border-color: $lighterColor !important;
     font-weight: 500;
     font-size: 20px;
+    // font-family: $fontFamily;
 }
 
 span[class^='Incidents__no-incidents___'] {
